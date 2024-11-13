@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 // import styles from "@/styles/Home.module.css";
 
 import { useEffect, useState } from "react";
-import { EmployeeData } from "./EmployeeData";
+import EmployeeData from "./EmployeeData";
 
 export default function Home() {
   const [data, setData] = useState([]);
@@ -66,10 +66,10 @@ export default function Home() {
 
   const handleUpdate = () => {
     const index = data
-      .map((item) => {
+      ?.map((item) => {
         return item.id;
       })
-      .indexOf(id);
+      ?.indexOf(id);
 
     const dt = [...data];
     dt[index].firstName = firstName;
@@ -166,7 +166,7 @@ export default function Home() {
         </thead>
 
         <tbody>
-          {data.map((item, index) => {
+          {data?.map((item, index) => {
             return (
               <tr key={index}>
                 <td>{index + 1}</td>
