@@ -153,8 +153,8 @@ export default function Home() {
         </div>
       </div>
 
-      <table className="table table-hover">
-        <thead>
+      <table className="table table-hover w-75 mx-auto">
+        <thead className="text-center">
           <tr>
             <td>Sr. No.</td>
             <td>Id</td>
@@ -165,7 +165,7 @@ export default function Home() {
           </tr>
         </thead>
 
-        <tbody>
+        <tbody className="text-center">
           {data?.map((item, index) => {
             return (
               <tr key={index}>
