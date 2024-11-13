@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 // import styles from "@/styles/Home.module.css";
 
 import { useEffect, useState } from "react";
-import EmployeeData from "./EmployeeData";
+import employeeData from "../employeeData";
 
 export default function Home() {
   const [data, setData] = useState([]);
@@ -15,7 +15,7 @@ export default function Home() {
   const [isUpdate, setIsUpdate] = useState(false);
 
   useEffect(() => {
-    setData(EmployeeData);
+    setData(employeeData);
   }, []);
 
   const handleEdit = (id) => {
