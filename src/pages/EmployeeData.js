@@ -1,4 +1,6 @@
-export const EmployeeData = [
+import React from "react";
+
+const EmployeeData = [
   {
     id: 1,
     firstName: "Mark",
@@ -20,3 +22,5 @@ export const EmployeeData = [
     age: 35,
   },
 ];
+
+export default EmployeeData;
